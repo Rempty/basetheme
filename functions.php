@@ -1,0 +1,268 @@
+<?php
+define( "THEME_DIR", get_template_directory() );
+define( "THEME_DIR_URL", get_template_directory_uri() );
+define( "THEME_NAME", 'Plantilla base' );
+define( "THEME_SLUG", 'mibase' );
+define( "THEME_STYLES", THEME_DIR_URL . "/css" );
+define( "THEME_FRAMEWORK", THEME_DIR . "/framework" );
+
+function theme_scripts(){
+    wp_enqueue_script('responsive-menu-1', get_bloginfo('template_url') . '/js/jquery.slicknav.min.js', '', '0.1', true);            
+    }
+ add_action('wp_print_scripts', 'theme_scripts');
+        // Translations can be filed in the /languages/ directory
+        load_theme_textdomain( 'basetheme', THEME_DIR . '/languages' );        
+        
+        
+        $locale = get_locale();
+        $locale_file = THEME_DIR . "/languages/$locale.php";
+        if ( is_readable($locale_file) ) {
+            require_once($locale_file);
+        } 
+               
+    
+	// Add RSS links to <head> section
+	add_theme_support( 'automatic-feed-links' );
+	
+	// Load jQuery
+	function mytheme_enqueue_scripts() {
+       wp_deregister_script('jquery');
+       wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"), false, '1.7.1');
+       wp_enqueue_script('jquery');
+    }
+    add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
+
+	// Clean up the <head>
+	function removeHeadLinks() {
+    	remove_action('wp_head', 'rsd_link');
+    	remove_action('wp_head', 'wlwmanifest_link');
+    }
+    add_action('init', 'removeHeadLinks');
+    remove_action('wp_head', 'wp_generator');
+    
+    if (function_exists('register_sidebar')) {
+    	register_sidebar(array(
+    		'name' => __('Sidebar Widgets','html5reset' ),
+    		'id'   => 'sidebar-widgets',
+    		'description'   => __( 'These are widgets for the sidebar.','html5reset' ),
+    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    		'after_widget'  => '</div>',
+    		'before_title'  => '<h2 class="widget-title">',
+    		'after_title'   => '</h2>'
+    	));
+    }
+    
+    register_nav_menus( array(
+		'primary' => __( 'Primary Navigation', 'mytheme' ),
+	) );
+    
+    // Disable Autoformat
+    function my_formatter($content) {
+        $new_content = '';
+        $pattern_full = '{(\[raw\].*?\[/raw\])}is';
+        $pattern_contents = '{\[raw\](.*?)\[/raw\]}is';
+        $pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
+
+        foreach ($pieces as $piece) {
+            if (preg_match($pattern_contents, $piece, $matches)) {
+                $new_content .= $matches[1];
+            } else {
+                $new_content .= wptexturize(wpautop($piece));
+            }
+        }
+
+        return $new_content;
+    }
+
+    remove_filter('the_content', 'wpautop');
+    remove_filter('the_content', 'wptexturize');
+    add_filter('the_content', 'my_formatter', 99);
+    
+    
+    
+    if ( function_exists( 'add_theme_support' ) ) { 
+        add_theme_support( 'post-thumbnails' ); 
+        set_post_thumbnail_size( 300, 112, true );
+        add_image_size( 'lansdscape-thumb', 860, 300, true );  
+        add_image_size( 'mini-thumb', 70, 70, true );
+    }
+
+    
+    
+    add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
+    
+    
+    function new_subcategory_hierarchy() { 
+    $category = get_queried_object();
+ 
+    $parent_id = $category->category_parent;
+ 
+    $templates = array();
+     
+    if ( $parent_id == 0 ) {
+        // Use default values from get_category_template()
+        $templates[] = "category-{$category->slug}.php";
+        $templates[] = "category-{$category->term_id}.php";
+        $templates[] = 'category.php';     
+    } else {
+        // Create replacement $templates array
+        $parent = get_category( $parent_id );
+ 
+        // Current first
+        $templates[] = "category-{$category->slug}.php";
+        $templates[] = "category-{$category->term_id}.php";
+ 
+        // Parent second
+        $templates[] = "category-{$parent->slug}.php";
+        $templates[] = "category-{$parent->term_id}.php";
+        $templates[] = 'category.php'; 
+    }
+    return locate_template( $templates );
+}
+ 
+add_filter( 'category_template', 'new_subcategory_hierarchy' );
+    
+    
+    /*********************************************************
+    Incorpora Framework
+    *********************************************************/
+    require_once THEME_FRAMEWORK . "/shortcodes.php";
+    require_once THEME_FRAMEWORK . "/widgets.php";
+    require_once THEME_FRAMEWORK . "/editor_estilos.php";
+    require_once THEME_FRAMEWORK . "/post-types/page_define.php";
+    require_once THEME_FRAMEWORK . "/post-types/slider_define.php";
+    require_once THEME_FRAMEWORK . "/post-types/post_define.php";    
+    require_once THEME_FRAMEWORK . "/admin/admin-recientes.php";
+    require_once THEME_FRAMEWORK . "/sidebar_generator.php";
+    require_once THEME_FRAMEWORK . "/admin/tinymce/tinymce.php";
+    
+    
+if(false === get_option("medium_crop")) {
+    add_option("medium_crop", "1");
+} else {
+    update_option("medium_crop", "1");
+}
+if(false === get_option("large_crop")) {
+    add_option("large_crop", "1");
+} else {
+    update_option("large_crop", "1");
+}
+
+ 
+// Gallery shortcode to modify for link="none".
+ 
+function modified_gallery_shortcode($attr) {
+    global $post, $wp_locale;
+    $output = gallery_shortcode($attr);
+   // remove link
+   if($attr['link'] == "none") {
+     $output = preg_replace(array('/<a[^>]*>/', '/<\/a>/'), '', $output);
+   }
+return $output;
+}
+add_shortcode( 'gallery', 'modified_gallery_shortcode' );
+/**
+* Check to see if this page will paginate
+* 
+* @return boolean
+*/
+function will_paginate() 
+{
+  global $wp_query;
+  
+  if ( !is_singular() ) 
+  {
+    $max_num_pages = $wp_query->max_num_pages;
+    
+    if ( $max_num_pages > 1 ) 
+    {
+      return true;
+    }
+  }
+  return false;
+}
+/**
+ * Checks whether a dynamic sidebar exists
+ *
+ * @param string $sidebar_name, sidebar name
+ * @return bool True, if sidebar exists. False otherwise.
+ */
+function sidebar_exist( $sidebar_name ) {
+    global $wp_registered_sidebars;
+    foreach ( (array) $wp_registered_sidebars as $index => $sidebar ) {
+	if ( in_array($sidebar_name, $sidebar) )
+	    return true;
+    }
+    return false;
+}
+
+/**
+ * Checks whether a dynamic sidebar exists and if is active (has any widgets)
+ *
+ * @param string $sidebar_name, sidebar name
+ * @return bool True, if exists and active (using widgets). False otherwise.
+ */
+function sidebar_exist_and_active( $sidebar_name ) {
+    global $wp_registered_sidebars;
+    foreach ( (array) $wp_registered_sidebars as $index => $sidebar ) {
+	if ( in_array($sidebar_name, $sidebar) ) {
+	    return is_active_sidebar( $sidebar['id'] );
+	}
+    }
+    return false;
+}
+// Return the column (widget area) HTML
+function get_dynamic_column( $id = '', $class = '', $widget_area = '' ) {
+    return "<div id='{$id}' class='{$class}'><div class='column-content-wrapper'>".udesign_get_dynamic_sidebar( $widget_area )."</div></div><!-- end {$id} -->";
+}
+// Currently there is no available function to return the contents of a dynamic sidebar. Therefore use this one:
+function udesign_get_dynamic_sidebar($index = '') {
+	$sidebar_contents = "";
+	ob_start();
+        if ( function_exists('dynamic_sidebar') && dynamic_sidebar( $index ) )
+	$sidebar_contents = ob_get_clean();
+	return $sidebar_contents;
+}
+
+add_filter('widget_text', 'do_shortcode');
+
+/*Sidebar Selector*/
+
+function sidebar( $post_id = NULL )
+		{
+				sidebar_generator( 'get_sidebar', $post_id );
+		}
+
+/// Pagination
+function wp_pagination($wp_query) {
+	global $wp_rewrite;    
+	$pages = '';
+	$max = $wp_query->max_num_pages;
+	if (!$current = get_query_var('paged')) $current = 1;
+	$a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
+	$a['total'] = $max;
+	$a['current'] = $current;
+
+	$total = 1; //1 - display the text "Page N of N", 0 - not display
+	$a['mid_size'] = 5; //how many links to show on the left and right of the current
+	$a['end_size'] = 1; //how many links to show in the beginning and end
+	//$a['prev_text'] = '<'; //text of the "Previous page" link
+    $a['prev_text'] = '<img src="'.get_bloginfo("template_url").'/img/navizq.png" />';
+	$a['next_text'] = '<img src="'.get_bloginfo("template_url").'/img/navder.png" />';
+
+	if ($max > 1) echo '<div class="navigation">';
+	if ($total == 1 && $max > 1) {
+	   //$pages = '<span class="pages">Page ' . $current . ' of ' . $max . '</span>'."\r\n";
+	   echo $pages . paginate_links($a);
+    }
+	if ($max > 1) echo '</div>';
+}
+
+/*
+function custom_nav_class($classes, $item){
+        $classes[] = "mi-clase-personalizada";
+        return $classes;
+}
+add_filter('nav_menu_css_class' , 'custom_nav_class' , 10 , 2);
+*/		
+?>

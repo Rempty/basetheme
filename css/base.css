@@ -1,0 +1,353 @@
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+
+a, a:hover {text-decoration: none; }
+#menu-topmenu > li > a {
+    transition: background-color 0.5s ease 0s;
+    -webkit-transition: background-color 0.5s ease 0s;
+}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::selection {
+	background: #d82e17; /* Safari */
+    color: #fff; 
+    text-shadow: none;
+	}
+*::-moz-selection {
+    background: #d82e17;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+
+ins {background-color: #f15a23; color: #000; text-decoration: none;}
+mark {background-color: #f15a23; color: #000; font-style: italic; font-weight: bold;}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+}
+.clearboth {
+    clear: both;
+}
+
+
+
+ol {list-style: decimal;}
+ul {list-style: disc;}
+b,strong{font-weight:bold;}
+
+
+/* Estructura
+-------------------------------------------------------------------------------*/
+.slicknav_menu {
+	display:none;
+}
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+th {
+  text-align: left;
+}
+td {
+    vertical-align: top;
+}
+nav#topmenu {            
+    padding-top: 15px;
+}
+section#content {    
+    padding-bottom: 50px;
+}
+
+section#main.fullwidth {
+    float: none;
+    width: 100%;
+}
+section#main article.post {    
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+}
+footer#footer {
+    background-color: #3a3a3a;
+    color:#fff;    
+}
+
+
+/* Header
+-------------------------------------------------------------------------------*/
+header#header {
+    position: relative;
+}
+header#header h1 {
+    width: 172px;
+    height: 56px;
+}
+
+#topmenu ul {list-style:none;}
+#topmenu ul li {margin:0px;}
+
+ul#menu-topmenu > li{
+    float: left;
+    margin:0px;
+}
+ul#menu-topmenu >li > a {
+    display: block;
+    padding: 24px 20px;            
+}    
+
+/* Submenu */
+ul.sub-menu{
+    position: absolute;
+    background-color: #3a3a3a;
+    padding: 0px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    width: 200px;
+    display: none;
+    z-index: 99;
+}
+ul#menu-topmenu ul.sub-menu li a{
+    display: block;
+    padding: 10px 10px;
+    color:#fff;        
+}
+nav#topmenu ul.sub-menu li a:hover{
+    background-color: #f15a23;    
+}
+
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+
+#page-wrap {
+    width: 100%;
+}
+
+.post {}
+
+.entry-content {}
+.entry-content a {}
+.entry-content a:hover {}
+
+#meta {}
+.postmetadata {}
+
+#sidebar {}
+
+.navgation {}
+.next-posts {}
+.prev-posts {}
+
+#searchform {}
+#s {}
+#searchsubmt {}
+	
+ol.commentlist {list-style: none;}
+ol.commentlist li {}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment { 
+  /* border-top: 1px dotted #CED8DF; */
+  list-style: none outside none;
+  margin: 30px 0 0;
+  padding: 10px 15px;
+}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn a.url, ol.commentlist li.comment div.vcard cite.fn {
+    color: #54555A;
+    font-size: 14px;
+       
+    font-weight: 400;
+    font-style: normal;
+}
+ol.commentlist li.comment div.vcard img.avatar {float:left; margin: 0 10px 0px 0px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {font-size: 10px; margin-bottom: 10px;}
+ol.commentlist li.comment div.comment-meta a {
+    color: #ADB3B8;
+    font-style: italic;
+    margin: 1px 0 5px;
+    font-size: 11px;
+}
+ol.commentlist li.comment p {
+    margin-bottom: 20px;
+    color:#909090;
+}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {font-size: 11px;}
+ol.commentlist li.comment div.reply a {font-weight: bold; color: #474747;}
+ol.commentlist li.comment div.reply a:hover { color:#f15a23; } 
+ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {margin: 0 0 10px 15px;}
+ol.commentlist li.comment ul.children li.depth-3 {margin: 0 0 10px 15px;}
+ol.commentlist li.comment ul.children li.depth-4 {margin: 0 0 10px 15px;}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {background: #fff;}
+ol.commentlist li.odd {background: #fff;}
+ol.commentlist li.parent { /* border-left: 5px solid #111; */}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+/* Posts
+-------------------------------------------------------------------------------*/
+#content p, #content li {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+#content li {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar
+-------------------------------------------------------------------------------*/
+aside#sidebar .widget{
+    margin-bottom: 50px;
+}
+
+aside#sidebar .widget ul li{    
+    border-bottom: 1px dotted #CED8DF;
+    list-style: none outside none;
+}
+aside#sidebar .widget ul li a {
+  color: #868686;
+  display: block;
+  padding: 5px 0 5px 15px;
+  font-size: 12px;
+}
+aside#sidebar .widget ul li a:hover {
+    color:#f15a23;
+}
+
+/***********************************
+ Posts 
+**********************************/
+.fecha {
+    
+}
+span.dia { font-size: 26px; }
+span.mes { font-weight: bold; text-transform: uppercase; }
+
+.last {
+    margin: 0px !important;
+}
+div.last_column{margin-right:0px!important}
+
+
+
+/*Breadcrumb*/
+.breadcrumb{width:1024px;margin:auto;}
+
+/* End Slide Toggle Styles */
+
+
+
+/************************************
+ Alineacion Imagenes
+***********************************/ 
+p img {
+    padding: 0;
+}
+article img {
+    max-width: 100%;
+}
+img.alignright, a img.alignright {
+    float: right;
+    margin: 4px 0 2px 14px;
+    display: block;
+}
+img.alignleft, a img.alignleft {
+  float: left;
+  margin: 4px 14px 10px 0;
+  display: block;
+}
+
+img.aligncenter, a img.aligncenter, img.centered, a img.centered {
+    display: block;
+    margin:6px auto 10px !important;
+}
+
+.alignleft {
+    text-align: left;
+}
+.alignright {
+    text-align: right;
+}
+.alignright {
+    text-align: center;
+}
+
+/***********************************
+  Navegacion Movil
+************************************/
+select#selectnav1 {
+    padding: 10px 10px;
+    width: 334px;
+    background-color: #a25ecd;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    appearance:none;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select#selectnav1 option:hover{
+    background: #d82e17 !important;
+}
+
+
+/********************************
+  Pagination
+********************************/
+.navigation {
+    clear: both;
+    text-align: center;
+}
+.navigation .page-numbers{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color:#cfcfcf;
+    color:#464646;
+    text-align: center;
+    margin-right: 2px;
+    font-size: 13px;
+    border-radius:15px;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.navigation a.page-numbers:hover{
+    background-color: #c0c0c0;
+}
+.navigation .page-numbers img{
+    vertical-align: middle;
+}
+.navigation .current {
+    color:#fff;
+    background-color: #8b38c1;
+}  

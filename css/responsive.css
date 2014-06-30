@@ -1,0 +1,78 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+img,
+object,
+embed {max-width: 100%; height: auto;}
+
+img.responsive {
+    width: 100%;
+}
+#comboNav{ display: none; }
+body {	
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+.selectnav { display: none; width:300px; }
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.container {
+        /* width: 712px; */
+    }
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {        
+    
+	#menu-topmenu { display: none; }
+    .slicknav_menu {
+	   display:block;
+    }
+	ul.sub-menu {
+	   position: relative;
+       box-shadow: none;
+       visibility: visible !important;
+       background: transparent;
+    }
+    .one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth { width:auto; margin: 0px; }  
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    header#header h1 {
+        padding-top: 10px;
+    }
+	.one_half, .one_third, .two_third, .one_fourth, .three_fourth { width:auto; margin: 0px; }    	
+}

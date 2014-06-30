@@ -1,0 +1,728 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inntek\n"
+"POT-Creation-Date: 2014-05-16 12:11-0500\n"
+"PO-Revision-Date: 2014-05-16 12:11-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:4
+msgid "Error 404 - Page Not Found"
+msgstr "Error 404 - Página no encontrada"
+
+#: ../comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Este post está protegido con clave. Ingrese la clave para ver los comentarios"
+
+#: ../comments.php:15
+msgid "No Responses"
+msgstr "No hay comentarios"
+
+#: ../comments.php:15
+msgid "One Response"
+msgstr "Un comentario"
+
+#: ../comments.php:15
+msgid "% Responses"
+msgstr "% Comentarios"
+
+#: ../comments.php:37
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: ../comments.php:47
+msgid "Leave a Reply"
+msgstr "Deja un Comentario"
+
+#: ../comments.php:47
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deja un Comentario a %s"
+
+#: ../comments.php:54
+msgid "You must be"
+msgstr "Usted debe ser "
+
+#: ../comments.php:54
+msgid "logged in"
+msgstr "Logeado "
+
+#: ../comments.php:54
+msgid "to post a comment."
+msgstr "para postear un comentario."
+
+#: ../comments.php:61
+msgid "Logged in as"
+msgstr "Logeado como "
+
+#: ../comments.php:61
+msgid "Log out"
+msgstr "Cerrar"
+
+#: ../comments.php:66 ../comments.php:67
+msgid "Name"
+msgstr "Nombre"
+
+#: ../comments.php:71 ../comments.php:72
+msgid "Mail"
+msgstr "E-mail"
+
+#: ../comments.php:73
+msgid "(will not be published)"
+msgstr "(no será publicado)"
+
+#: ../comments.php:77 ../comments.php:78
+msgid "Website"
+msgstr "Sitio Web"
+
+#: ../comments.php:90
+msgid "Submit Comment"
+msgstr "Enviar Comentarios"
+
+#: ../functions.php:45
+msgid "Sidebar Widgets"
+msgstr "Widgets del sidebar"
+
+#: ../functions.php:47
+msgid "These are widgets for the sidebar."
+msgstr "Estos widget van al sidebar"
+
+#: ../functions.php:56
+msgid "Primary Navigation"
+msgstr "Navegación principal"
+
+#: ../loop.php:22
+msgid "Tags: "
+msgstr "Etiquetas:"
+
+#: ../loop.php:24
+msgid "Read More"
+msgstr "Leer Más"
+
+#: ../loop.php:39
+msgid "Search not found"
+msgstr "No se encontraron resultados"
+
+#: ../search.php:7
+msgid "Search Results"
+msgstr "Resultados de la búsqueda"
+
+#: ../single.php:35
+msgid "Edit this entry."
+msgstr "Editar la entrada"
+
+#: ../framework/editor_estilos.php:58
+#: ../framework/admin/tinymce/window_post.php:241
+#, fuzzy
+msgid "Warning"
+msgstr "1 - Alerta"
+
+#: ../framework/editor_estilos.php:59
+msgid "Celeste"
+msgstr ""
+
+#: ../framework/editor_estilos.php:60
+msgid "Cafe"
+msgstr ""
+
+#: ../framework/sidebar_generator.php:9
+#, fuzzy
+msgid "Page Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/sidebar_generator.php:10
+#, fuzzy
+msgid "Blog Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/sidebar_generator.php:11
+#, fuzzy
+msgid "Search Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/sidebar_generator.php:12
+#, fuzzy
+msgid "Archive Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/sidebar_generator.php:13
+#, fuzzy
+msgid "404 Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/sidebar_generator.php:14
+#, fuzzy
+msgid "Portfolio Widget Area"
+msgstr "Primer area de widgets de página principal"
+
+#: ../framework/admin/tinymce/window_post.php:8
+msgid "You are not allowed to be here"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:43
+msgid "Select the Style Shortcode you would like to insert into the post."
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:46
+#, fuzzy
+msgid "Select Custom Shortcode:"
+msgstr "&Introducir comando personalizado..."
+
+#: ../framework/admin/tinymce/window_post.php:49
+#, fuzzy
+msgid "No Style"
+msgstr "&Aplicar Estilo"
+
+#: ../framework/admin/tinymce/window_post.php:51
+msgid "Misc"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:52
+msgid "Googel Map"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:53
+#, fuzzy
+msgid "Progress Bar"
+msgstr "Barra de &conexión rápida"
+
+#: ../framework/admin/tinymce/window_post.php:54
+#, fuzzy
+msgid "Social Icons"
+msgstr "&Organizar iconos"
+
+#: ../framework/admin/tinymce/window_post.php:55
+msgid "Slideshow"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:56
+msgid "Testimonial"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:57
+msgid "Tooltip"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:58
+msgid "Call To Action Box"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:59
+#: ../framework/post-types/video_define.php:8
+msgid "Video"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:60
+#, fuzzy
+msgid "Code"
+msgstr "Código postal:"
+
+#: ../framework/admin/tinymce/window_post.php:61
+msgid "Pre"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:64
+msgid "Pricing Table"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:65
+#, fuzzy
+msgid "3 Column"
+msgstr "Propiedades de columna"
+
+#: ../framework/admin/tinymce/window_post.php:66
+#, fuzzy
+msgid "4 Column"
+msgstr "Propiedades de columna"
+
+#: ../framework/admin/tinymce/window_post.php:67
+#, fuzzy
+msgid "5 Column"
+msgstr "Propiedades de columna"
+
+#: ../framework/admin/tinymce/window_post.php:70
+msgid "DropCap"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:71
+msgid "Drop Cap1"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:72
+msgid "Drop Cap2"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:73
+msgid "Drop Cap3"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:76
+#: ../framework/admin/tinymce/window_post.php:78
+msgid "Divider"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:77
+#, fuzzy
+msgid "Divider Top"
+msgstr "Poner los directorios arriba"
+
+#: ../framework/admin/tinymce/window_post.php:79
+msgid "Divider 2Dot"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:80
+msgid "Divider 3Dot"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:83
+msgid "Callout / Pullquote"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:84
+#: ../framework/admin/tinymce/window_post.php:97
+#, fuzzy
+msgid "Left Aligned"
+msgstr "Alinear a la izquierda"
+
+#: ../framework/admin/tinymce/window_post.php:85
+#: ../framework/admin/tinymce/window_post.php:98
+#, fuzzy
+msgid "Right Aligned"
+msgstr "Alinear a la derecha"
+
+#: ../framework/admin/tinymce/window_post.php:86
+msgid "Pullquote"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:89
+msgid "Highlights"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:90
+msgid "Yello"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:91
+#: ../framework/admin/tinymce/window_post.php:142
+#: ../framework/admin/tinymce/window_post.php:277
+#: ../framework/admin/tinymce/window_post.php:309
+msgid "Black"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:92
+#: ../framework/admin/tinymce/window_post.php:135
+#: ../framework/admin/tinymce/window_post.php:224
+#: ../framework/admin/tinymce/window_post.php:270
+#: ../framework/admin/tinymce/window_post.php:302
+msgid "Red"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:95
+#, fuzzy
+msgid "Image alignment/lightbox"
+msgstr "PCX: imagen inválida"
+
+#: ../framework/admin/tinymce/window_post.php:96
+msgid "Image With Lightbox Effect"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:99
+#, fuzzy
+msgid "Centered"
+msgstr "Centrado"
+
+#: ../framework/admin/tinymce/window_post.php:102
+#, fuzzy
+msgid "Tabs, Accordings, Toggle"
+msgstr "Cerrar todas las pestañas"
+
+#: ../framework/admin/tinymce/window_post.php:103
+#, fuzzy
+msgid "Tabs"
+msgstr "Tabulaciones"
+
+#: ../framework/admin/tinymce/window_post.php:104
+msgid "Accordion"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:106
+msgid "Toggle"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:121
+#, fuzzy
+msgid "Generate Buttons"
+msgstr "Generar base de datos"
+
+#: ../framework/admin/tinymce/window_post.php:124
+#: ../framework/admin/tinymce/window_post.php:205
+#: ../framework/admin/tinymce/window_post.php:327
+#, fuzzy
+msgid "Title: "
+msgstr "Título:"
+
+#: ../framework/admin/tinymce/window_post.php:128
+#, fuzzy
+msgid "Link: "
+msgstr "<ENLACE>"
+
+#: ../framework/admin/tinymce/window_post.php:133
+#: ../framework/admin/tinymce/window_post.php:300
+#: ../framework/admin/tinymce/window_post.php:337
+#, fuzzy
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: ../framework/admin/tinymce/window_post.php:136
+#: ../framework/admin/tinymce/window_post.php:271
+#: ../framework/admin/tinymce/window_post.php:303
+msgid "Magenta"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:137
+#: ../framework/admin/tinymce/window_post.php:272
+#: ../framework/admin/tinymce/window_post.php:304
+msgid "Pink"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:138
+#: ../framework/admin/tinymce/window_post.php:227
+#: ../framework/admin/tinymce/window_post.php:273
+#: ../framework/admin/tinymce/window_post.php:305
+msgid "Orange"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:139
+#: ../framework/admin/tinymce/window_post.php:223
+#: ../framework/admin/tinymce/window_post.php:274
+#: ../framework/admin/tinymce/window_post.php:306
+msgid "Green"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:140
+#: ../framework/admin/tinymce/window_post.php:225
+#: ../framework/admin/tinymce/window_post.php:275
+#: ../framework/admin/tinymce/window_post.php:307
+msgid "Blue"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:141
+#: ../framework/admin/tinymce/window_post.php:276
+#: ../framework/admin/tinymce/window_post.php:308
+msgid "Grey"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:143
+#: ../framework/admin/tinymce/window_post.php:278
+#: ../framework/admin/tinymce/window_post.php:310
+msgid "Purple"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:148
+#, fuzzy
+msgid "Button Size: "
+msgstr "Formato de tamaño"
+
+#: ../framework/admin/tinymce/window_post.php:150
+msgid "Small"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:151
+msgid "Medium"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:152
+msgid "Large"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:157
+#, fuzzy
+msgid "Button Type: "
+msgstr "&Modo de acceso:"
+
+#: ../framework/admin/tinymce/window_post.php:159
+#, fuzzy
+msgid "Simple"
+msgstr "Tema monocromo sencillo"
+
+#: ../framework/admin/tinymce/window_post.php:160
+msgid "Glossy"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:165
+#, fuzzy
+msgid "Button Target: "
+msgstr "Archivo destino:"
+
+#: ../framework/admin/tinymce/window_post.php:178
+#, fuzzy
+msgid "List Icons"
+msgstr "&Organizar iconos"
+
+#: ../framework/admin/tinymce/window_post.php:182
+#, fuzzy
+msgid "List Type"
+msgstr "&Modo de acceso:"
+
+#: ../framework/admin/tinymce/window_post.php:184
+msgid "Dotted"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:185
+msgid "Dashed"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:186
+#, fuzzy
+msgid "Line"
+msgstr "Línea"
+
+#: ../framework/admin/tinymce/window_post.php:187
+#, fuzzy
+msgid "Check"
+msgstr "Comprobación de actualización"
+
+#: ../framework/admin/tinymce/window_post.php:188
+#, fuzzy
+msgid "Circle Bullet"
+msgstr "Estilo de &viñeta:"
+
+#: ../framework/admin/tinymce/window_post.php:189
+msgid "Arrow"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:202
+#, fuzzy
+msgid "Info Boxes"
+msgstr "Información de proyecto"
+
+#: ../framework/admin/tinymce/window_post.php:209
+#, fuzzy
+msgid "Title Link: "
+msgstr "Borrando enlace simbólico"
+
+#: ../framework/admin/tinymce/window_post.php:213
+#, fuzzy
+msgid "Box Type: "
+msgstr "&Modo de acceso:"
+
+#: ../framework/admin/tinymce/window_post.php:215
+#, fuzzy
+msgid "Title Only"
+msgstr "Sólo lectura"
+
+#: ../framework/admin/tinymce/window_post.php:216
+#, fuzzy
+msgid "With Description"
+msgstr "%s con %d bits"
+
+#: ../framework/admin/tinymce/window_post.php:221
+msgid "Box Color: "
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:226
+msgid "Silver"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:232
+#, fuzzy
+msgid "Box Icon: "
+msgstr "No se puede cargar el icono de '%s'."
+
+#: ../framework/admin/tinymce/window_post.php:234
+#, fuzzy
+msgid "NO ICON"
+msgstr "No hay ningún sonido"
+
+#: ../framework/admin/tinymce/window_post.php:235
+#, fuzzy
+msgid "Note"
+msgstr "Nota, 8 1/2 x 11 in"
+
+#: ../framework/admin/tinymce/window_post.php:236
+msgid "RSS"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:237
+#: ../framework/admin/tinymce/window_post.php:343
+msgid "Heart"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:238
+#, fuzzy
+msgid "Info"
+msgstr "2 - Informativo"
+
+#: ../framework/admin/tinymce/window_post.php:239
+#, fuzzy
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../framework/admin/tinymce/window_post.php:240
+#: ../framework/admin/tinymce/window_post.php:345
+#, fuzzy
+msgid "Download"
+msgstr "Descargar"
+
+#: ../framework/admin/tinymce/window_post.php:242
+#: ../framework/admin/tinymce/window_post.php:344
+msgid "Twitter"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:243
+msgid "Star"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:244
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: ../framework/admin/tinymce/window_post.php:261
+#, fuzzy
+msgid "Simple Boxes"
+msgstr "Tema monocromo sencillo"
+
+#: ../framework/admin/tinymce/window_post.php:264
+#, fuzzy
+msgid "Border Size (px): "
+msgstr "%d archivo. Tamaño total: %s"
+
+#: ../framework/admin/tinymce/window_post.php:268
+msgid "Border Color"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:292
+msgid "Titled Boxes"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:295
+#, fuzzy
+msgid "Title : "
+msgstr "Título:"
+
+#: ../framework/admin/tinymce/window_post.php:324
+#, fuzzy
+msgid "Links with icons"
+msgstr "%d directorio con sus contenidos"
+
+#: ../framework/admin/tinymce/window_post.php:331
+#, fuzzy
+msgid "URL: "
+msgstr "URL de FTP"
+
+#: ../framework/admin/tinymce/window_post.php:339
+#, fuzzy
+msgid "Email"
+msgstr "Email:"
+
+#: ../framework/admin/tinymce/window_post.php:340
+#, fuzzy
+msgid "Print"
+msgstr "Imprimir"
+
+#: ../framework/admin/tinymce/window_post.php:341
+#, fuzzy
+msgid "Add"
+msgstr "Añadir"
+
+#: ../framework/admin/tinymce/window_post.php:342
+#, fuzzy
+msgid "Start"
+msgstr "Comenzar tran&sferencia inmediatamente"
+
+#: ../framework/admin/tinymce/window_post.php:346
+msgid "Phone"
+msgstr ""
+
+#: ../framework/admin/tinymce/window_post.php:347
+#, fuzzy
+msgid "Link"
+msgstr "Enlace"
+
+#: ../framework/admin/tinymce/window_post.php:348
+#, fuzzy
+msgid "External Link"
+msgstr "Borrando enlace simbólico"
+
+#: ../framework/admin/tinymce/window_post.php:362
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../framework/admin/tinymce/window_post.php:366
+#, fuzzy
+msgid "Insert"
+msgstr "Insertar"
+
+#: ../framework/post-types/autor_define.php:7
+msgid "Autores"
+msgstr ""
+
+#: ../framework/post-types/autor_define.php:8
+msgid "Autor"
+msgstr ""
+
+#: ../framework/post-types/banner_define.php:7
+msgid "Banners"
+msgstr ""
+
+#: ../framework/post-types/banner_define.php:8
+msgid "Banner"
+msgstr ""
+
+#: ../framework/post-types/colaborador_define.php:7
+msgid "Colaboradores"
+msgstr ""
+
+#: ../framework/post-types/colaborador_define.php:8
+msgid "colaborador"
+msgstr ""
+
+#: ../framework/post-types/revista_define.php:7
+msgid "Revistas"
+msgstr ""
+
+#: ../framework/post-types/revista_define.php:8
+msgid "Revista"
+msgstr ""
+
+#: ../framework/post-types/revista_define.php:29
+msgid "Edicion"
+msgstr ""
+
+#: ../framework/post-types/revista_define.php:43
+msgid "Seccion"
+msgstr ""
+
+#: ../framework/post-types/slider_define.php:7
+msgid "Sliders"
+msgstr ""
+
+#: ../framework/post-types/slider_define.php:8
+msgid "Slider"
+msgstr ""
+
+#: ../framework/post-types/video_define.php:7
+msgid "Videos"
+msgstr ""
+
+#~ msgid "Pages: "
+#~ msgstr "Páginas"
+
+#~ msgid "number"
+#~ msgstr "numero:"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "(required)"
+#~ msgstr "(requerido)"

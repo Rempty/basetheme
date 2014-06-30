@@ -1,0 +1,194 @@
+/*************************************************
+  Columns
+*************************************************/
+.one_half {
+    /*width: 475px;*/
+    width:48%;
+    float:left;
+    margin-right: 4%;    
+}
+.one_third {
+    /*width: 316px;*/
+    width:30%;
+    float:left;
+    margin-right: 4%;    
+}
+.two_third {
+    /*width: 652px;*/
+    width:65%;
+    float:left;
+    margin-right: 4%;
+}
+.one_fourth {
+    /*width: 233px;*/
+    width:22%;
+    float:left;
+    margin-right: 4%;
+}
+.three_fourth {
+    /*width: 739px;*/
+    width:74%;
+    float:left;
+    margin-right: 4%;
+}
+.one_fifth {
+    width:18%;
+    float:left;    
+    margin-right: 2%;
+}
+.five {
+    width: 1065px;
+    margin-left: -20px;
+}
+.one_half.last, .one_third.last, .one_fourth.last, .two_third.last, .two_fifth.last {
+    margin: 0px;
+}
+.one_half.last, .one_third.last, .one_fourth.last, .two_third.last, .two_fifth.last {
+    min-height: 1px;
+}
+
+/*****************************************************
+ Blockquote
+*****************************************************/
+blockquote {
+    background: url("../img/quote.png") no-repeat 5px 12px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 10px 20px 10px 45px;
+    border-left: 5px solid #EEEEEE;
+    font-weight: normal;
+    display: block;
+}
+blockquote.alignleft {
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 260px;
+}
+blockquote.alignright {
+    float: right;
+    margin: 10px 0 0 20px;
+    width: 260px;
+}
+blockquote.alignnone {
+  float: none;
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+/*****************************************************
+ Tabs Style
+*****************************************************/
+.tabs-wrapper ul.tabs {
+    width:100%;
+    margin:20px 0 0;
+    padding:0;
+    float:left;       
+    border-bottom:1px solid #EEE; 
+    height: 36px;
+}
+.tabs-wrapper ul.tabs li {
+    display:block;
+    float:left;    
+    margin: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px !important;
+    background-color: #f3f3f5;
+    border-radius:7px 7px 0px 0px;
+    border:1px solid #EEE;
+    border-bottom: none;
+    overflow: hidden;
+}
+.tabs-wrapper ul.tabs li a {
+    display:block;
+    float:left;
+    text-decoration:none;
+}
+.tabs-wrapper ul.tabs li a {    
+    display: block;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    border:0 none;
+    cursor:pointer;
+    overflow:hidden;
+    outline:none;
+}
+.tabs-wrapper ul.tabs li a.selected {
+    background-color: #fff;
+}
+
+.tabs-wrapper ul.tabs li a span {    
+    display: block;
+    padding: 7px 0 7px 20px;
+    line-height:22px;
+}
+.tabs-wrapper ul.tabs li a:hover {    
+    text-decoration: none;
+}
+.tabs-wrapper ul.tabs li a:hover span {    
+}
+
+.tabs-wrapper ul.tabs li a.selected {    
+    text-decoration: none;
+}
+.tabs-wrapper ul.tabs li a.selected span {
+    
+}
+.tabs-wrapper ul.tabs li a.selected span:hover {
+    
+}
+.tabs-wrapper .tab-content {
+    clear:both;    
+    width: 100%;
+    border:1px solid #EEE;
+    border-top: none;    
+    float:left;
+    border-radius: 0px 0px 7px 7px ;
+}
+.js_on .tabs-wrapper .tab-content {
+    display:none;
+}
+.tabs-wrapper .tab-content .tabs-inner-padding {
+    padding:20px;
+}
+/* End Tabs Styles */
+
+/******************************
+ Toggle
+*******************************/ 
+h4.slide_toggle {
+    margin: 10px 0;
+    padding: 0 0 15px 20px;
+    position: relative;
+}
+h4.slide_toggle a {
+    padding-top: 3px;
+    display: block;
+    text-decoration: none;
+    border: 0 none;
+    outline: 0 none;
+    line-height:1.1;
+}
+.slide_toggle_content {
+    margin: 0 0 10px 20px;
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.divider {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #333;
+}
+
+.literal {
+    background-color: #F9F2F4;
+    border-radius: 4px;
+    color: #C7254E;
+    font-size: 16px;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+.highlight {
+    padding: 0px 7px;
+}
