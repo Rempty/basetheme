@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-
-<!--[if lt IE 7 ]> <html class="ie ie6 no-js" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 no-js" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 no-js" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 no-js" <?php language_attributes(); ?>> <![endif]-->
-<!--[if lt IE 9]>
-<script src="<?php bloginfo("template_url"); ?>/js/html5shiv.js"></script>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->
-
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
-
-	<meta charset="<?php bloginfo('charset'); ?>">
-	
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<?php if (is_search()) { ?>
-	<meta name="robots" content="noindex, nofollow" /> 
-	<?php } ?>
-
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-	
-	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>" />
-	<meta name="google-site-verification" content="" />
-	<meta name="Copyright" content="Copyright Miguel Manchego 2013. All Rights Reserved." />
-
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	
 	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/base.css" />
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/forms.css" />
@@ -34,15 +24,15 @@
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/custom.css" />   
     
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/css/responsive.css" />
+
        
     
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ --> 
-	
-		
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>	
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    
+    
+    
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
