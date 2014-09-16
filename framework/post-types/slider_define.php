@@ -12,6 +12,8 @@ function create_slider_type() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'slider'),
+            'exclude_from_search' => true,
+            'supports' => 'title', 'page-attributes' 
 		)
 	);
 }

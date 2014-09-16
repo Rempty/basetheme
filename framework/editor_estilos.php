@@ -67,16 +67,4 @@ function tuts_mcekit_editor_settings($settings) {
     $settings['theme_advanced_styles'] .= trim($class_settings, '; ');
     return $settings;
 } 
-
-add_filter('tiny_mce_before_init', 'tuts_mcekit_editor_settings');
-
-/*
- * Add custom stylesheet to the website front-end with hook 'wp_enqueue_scripts'
- * Enqueue the custom stylesheet in the front-end
- */
-add_action('wp_enqueue_scripts', 'tuts_mcekit_editor_enqueue');
-function tuts_mcekit_editor_enqueue() {
-  $StyleUrl = plugin_dir_url(__FILE__).'editor-styles.css';
-  wp_enqueue_style( 'myCustomStyles', $StyleUrl );
-}
 ?>
