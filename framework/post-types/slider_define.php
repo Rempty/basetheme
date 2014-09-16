@@ -28,7 +28,8 @@ function theme_slider_banner() {
     wp_enqueue_script('media-upload');
     wp_enqueue_script('thickbox');
     wp_register_script('my-upload', get_bloginfo("template_url").'/js/custom-admin.js', array('jquery','media-upload','thickbox'));
-    wp_enqueue_script('my-upload');        
+    wp_enqueue_script('my-upload');
+    wp_enqueue_style('thickbox');         
     
     $banners = get_post_meta($post->ID, 'theme_page_banner', true);
     $titulos = get_post_meta($post->ID, 'theme_page_titulo', true);
