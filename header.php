@@ -47,6 +47,7 @@
 			<h1>
                 <a href="<?php bloginfo('wpurl'); ?>" title="<?php bloginfo('description'); ?>">
                     <img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo("template_url"); ?>/img/logo.png" class="img-responsive" />
+                    <span><?php bloginfo('name'); ?></span>
                 </a>
             </h1>            
             </div>

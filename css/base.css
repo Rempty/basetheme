@@ -1,6 +1,3 @@
-/* we like off-black for text */
-body, select, input, textarea {color: #333;}
-
 a, a:hover {text-decoration: none; }
 #menu-topmenu > li > a {
     transition: background-color 0.5s ease 0s;
@@ -37,8 +34,6 @@ mark {background-color: #f15a23; color: #000; font-style: italic; font-weight: b
     clear: both;
 }
 
-
-
 ol {list-style: decimal;}
 ul {list-style: disc;}
 b,strong{font-weight:bold;}
@@ -59,24 +54,18 @@ th {
 td {
     vertical-align: top;
 }
-nav#topmenu {            
-    padding-top: 15px;
-}
+
 section#content {    
     padding-bottom: 50px;
 }
 
 section#main.fullwidth {
     float: none;
-    width: 100%;
+    width: auto;
 }
 section#main article.post {    
     margin: 0 0 30px;
     padding: 0 0 30px;
-}
-footer#footer {
-    background-color: #3a3a3a;
-    color:#fff;    
 }
 
 
@@ -85,9 +74,11 @@ footer#footer {
 header#header {
     position: relative;
 }
-header#header h1 {
-    width: 172px;
+header#header h1 {    
     height: 56px;
+}
+header#header h1 span{
+    display: none;
 }
 
 #topmenu ul {list-style:none;}
