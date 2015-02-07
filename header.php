@@ -14,12 +14,13 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    
+    <!--[if lt IE 9]>
+    <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
+    <![endif]-->  
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	
 	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/base.css" />
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/forms.css" />
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/framework.css" />
+    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/forms.css" />    
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/slicknav.css" />
     <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/custom.css" />   
     
@@ -45,6 +46,7 @@
 			<h1>
                 <a href="<?php bloginfo('wpurl'); ?>" title="<?php bloginfo('description'); ?>">
                     <img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo("template_url"); ?>/img/logo.png" class="img-responsive" />
+                    <span><?php bloginfo('name'); ?></span>
                 </a>
             </h1>            
             </div>

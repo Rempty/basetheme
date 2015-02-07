@@ -20,56 +20,56 @@
                         $output = '';
 			// all 4 active: 1 case
 			if ( $bottom_1_is_active && $bottom_2_is_active && $bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_fourth', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_2', 'one_fourth', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_fourth', 'bottom-widget-area-3' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_fourth last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-3', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-3', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-3', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-3', 'bottom-widget-area-4' );
 			}
 			// 3 active: 4 cases
 			if ( $bottom_1_is_active && $bottom_2_is_active && $bottom_3_is_active && !$bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_third', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_2', 'one_third', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_third last_column', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-4', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-4', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-4', 'bottom-widget-area-3' );
 			}
 			if ( $bottom_1_is_active && $bottom_2_is_active && !$bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_third', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_2', 'one_third', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_third last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-4', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-4', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-4 last_column', 'bottom-widget-area-4' );
 			}
 			if ( $bottom_1_is_active && !$bottom_2_is_active && $bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_third', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_third', 'bottom-widget-area-3' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_third last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-4', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-4', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-4 last_column', 'bottom-widget-area-4' );
 			}
 			if ( !$bottom_1_is_active && $bottom_2_is_active && $bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_2', 'one_third', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_third', 'bottom-widget-area-3' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_third last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-4', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-4', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-4', 'bottom-widget-area-4' );
 			}
 			// 2 active: 6 cases
 			if ( $bottom_1_is_active && $bottom_2_is_active && !$bottom_3_is_active && !$bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_half', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_2', 'one_half last_column', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-6', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-6', 'bottom-widget-area-2' );
 			}
 			if ( $bottom_1_is_active && !$bottom_2_is_active && $bottom_3_is_active && !$bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_half', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_half last_column', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-6', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-6', 'bottom-widget-area-3' );
 			}
 			if ( !$bottom_1_is_active && $bottom_2_is_active && $bottom_3_is_active && !$bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_2', 'one_half', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_3', 'one_half last_column', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-6', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-6 last_column', 'bottom-widget-area-3' );
 			}
 			if ( !$bottom_1_is_active && $bottom_2_is_active && !$bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_2', 'one_half', 'bottom-widget-area-2' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_half last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_2', 'col-md-6', 'bottom-widget-area-2' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-6 last_column', 'bottom-widget-area-4' );
 			}
 			if ( !$bottom_1_is_active && !$bottom_2_is_active && $bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_3', 'one_half', 'bottom-widget-area-3' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_half last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_3', 'col-md-6', 'bottom-widget-area-3' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-6', 'bottom-widget-area-4' );
 			}
 			if ( $bottom_1_is_active && !$bottom_2_is_active && !$bottom_3_is_active && $bottom_4_is_active ) {
-			    $output .= get_dynamic_column( 'bottom_1', 'one_half', 'bottom-widget-area-1' );
-			    $output .= get_dynamic_column( 'bottom_4', 'one_half last_column', 'bottom-widget-area-4' );
+			    $output .= get_dynamic_column( 'bottom_1', 'col-md-6', 'bottom-widget-area-1' );
+			    $output .= get_dynamic_column( 'bottom_4', 'col-md-6', 'bottom-widget-area-4' );
 			}
 			// 1 active: 4 cases
 			if ( $bottom_1_is_active && !$bottom_2_is_active && !$bottom_3_is_active && !$bottom_4_is_active ) {
@@ -110,28 +110,9 @@
 <!-- jQuery is called via the Wordpress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/js/superfish.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/theme.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/custom.js"></script>
 
-<!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
-<script>
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
--->
 	
 </body>
-
 </html>
