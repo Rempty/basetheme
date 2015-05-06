@@ -70,7 +70,7 @@ function youtube($atts) {
     "height" => '450'
     ), $atts));
 
-    return '<iframe width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$id.'?rel=0" frameborder="0" allowfullscreen></iframe>';
+    return '<div class="embed-container"><iframe width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$id.'?rel=0" frameborder="0" allowfullscreen></iframe></div>';
 }
 add_shortcode('youtube', 'youtube');
 
@@ -84,7 +84,7 @@ function vimeo($atts) {
     ), $atts));
 
     return '
-    <iframe width="'.$width.'" height="'.$height.'" src="http://player.vimeo.com/video/'.$id.'?rel=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    <div class="embed-container"><iframe width="'.$width.'" height="'.$height.'" src="http://player.vimeo.com/video/'.$id.'?rel=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
 }
 add_shortcode('vimeo', 'viemo');
 
