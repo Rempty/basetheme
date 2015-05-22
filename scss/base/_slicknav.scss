@@ -19,7 +19,14 @@
 .slicknav_menu:after { content: " "; display: table; }
 .slicknav_menu:after { clear: both }
 /* IE6/7 support */
-.slicknav_menu { *zoom: 1 }
+.slicknav_menu { *zoom: 1;
+  @include phoneportrait{
+    display: block;
+  }
+  @include tabletportrait{
+    display: block;
+  }
+}
 
 /* 
     User Default Style

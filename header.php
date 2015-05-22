@@ -19,8 +19,6 @@
     <![endif]-->  
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	        
 	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/template.css" />       
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/css/responsive.css" />       
-    
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
 	<?php wp_head(); ?>

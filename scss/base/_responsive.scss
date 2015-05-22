@@ -1,0 +1,9 @@
+img,
+object,
+embed {max-width: 100%; height: auto;}
+img.responsive {
+  width: 100%;
+}
+body {
+  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}

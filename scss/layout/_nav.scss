@@ -12,3 +12,19 @@ nav#topmenu {
 		}
 	}	
 }
+#menu-topmenu{
+  @include phoneportrait{
+    display: none;
+  }
+  @include tabletportrait{
+    display:none;
+  }
+}
+ul.sub-menu {
+  @include phoneportrait{
+    position: relative;
+    box-shadow: none;
+    visibility: visible !important;
+    background: transparent;
+  }
+}
