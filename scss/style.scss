@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    $STYLE
+\*------------------------------------*/
+/**
+ * Aqui incluimos todos los modulos (archivos .scss) que se van
+ * a compilar en el CSS definitivo: /css/style.css.
+ */
+ 
+ 
+ 
+/**
+* Libraries
+**/
+@import "lib/variables.scss";
+@import "lib/mixins.scss";
+@import "base/normalize";
+@import "base/scaffolding";
+@import "base/type";
+@import "base/code";
+@import "elements/forms";
+@import "base/wordpress";
+@import "base/slicknav";
+
+
+/**
+* Components
+**/
+@import "elements/grid";
+@import "elements/tables";
+@import "elements/buttons.scss";
+
+
+/**
+* Layout
+**/
+@import "layout/general";
+@import "layout/nav";
+@import "layout/footer"; 

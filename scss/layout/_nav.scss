@@ -1,0 +1,14 @@
+nav#topmenu {
+	ul.topmenu {
+		margin:0px;
+		padding:0px;
+		list-style:none;
+		>li {
+			float:left;
+			>a {
+				display:block;
+				padding:10px 15px;
+			}
+		}
+	}	
+}

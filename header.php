@@ -17,21 +17,11 @@
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
     <![endif]-->  
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	
-	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/base.css" />
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/forms.css" />    
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/slicknav.css" />
-    <link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/custom.css" />   
-    
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/css/responsive.css" />
-
-       
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	        
+	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/template.css" />       
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/css/responsive.css" />       
     
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
-    
-    
     
 	<?php wp_head(); ?>
 </head>
