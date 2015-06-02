@@ -3205,6 +3205,22 @@ header#header h1 span {
 /**
 * Layout
 **/
+/*------------------------------------*\
+    Estilos Generales
+\*------------------------------------*/
+body {
+  line-height: 1.8em;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
+  color: gray;
+  background-color: white; }
+
+a {
+  color: #13a89e; }
+
+a:hover {
+  color: #0e7a73; }
+
 nav#topmenu ul.topmenu {
   margin: 0px;
   padding: 0px;

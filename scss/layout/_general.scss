@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    Estilos Generales
+\*------------------------------------*/
+body {
+  line-height:$baseline;
+  font-family:$basefont;
+  font-size:$basefontsize;
+  color:$textcolor;
+  background-color:$background;
+}
+a { color:$linkcolor; }
+a:hover { color:$linkcolorhover; }
