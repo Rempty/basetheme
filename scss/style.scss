@@ -5,36 +5,51 @@
  * Aqui incluimos todos los modulos (archivos .scss) que se van
  * a compilar en el CSS definitivo: /css/style.css.
  */
- 
- 
- 
+
 /**
 * Libraries
 **/
-@import "lib/variables.scss";
-@import "lib/mixins.scss";
-@import "base/normalize";
-@import "base/scaffolding";
-@import "base/type";
-@import "base/code";
-@import "elements/forms";
-@import "base/wordpress";
-@import "base/slicknav";
 
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Core CSS
+@import "bootstrap/normalize";
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+@import "bootstrap/alerts";
+@import "bootstrap/media";
+@import "bootstrap/responsive-embed";
+@import "components/buttons";
+@import "components/slider";
 
 /**
-* Components
+* Config
 **/
-@import "elements/grid";
-@import "elements/tables";
-@import "elements/buttons.scss";
+@import "lib/settings.scss";
 
-
+/**
+* Wordpress Base
+**/
+@import "base/wordpress";
+@import "base/slicknav";
 /**
 * Layout
 **/
 @import "layout/general";
+@import "layout/header";
 @import "layout/nav";
+@import "layout/home";
 @import "layout/footer";
 
 /**

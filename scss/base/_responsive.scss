@@ -34,24 +34,24 @@ px      68    160    252    344    436    528    620    712    */
 
 }
 
-/*		Mobile Layout: 320px.
+/*		Mobile Layout: < 768px
 		Gutters: 24px.
 		Outer margins: 34px.
-		Inherits styles from: Default Layout.
+		Inherits styles from: Default Layout Mobile.
 ---------------------------------------------
 cols    1     2      3
 px      68    160    252    */
-@media only screen and (max-width: $screen-xs-max)  {
+@media only screen and (max-width: $grid-float-breakpoint-max)  {
 
 }
 
-/*		Wide Mobile Layout: 480px.
+/*		Wide Mobile Layout: =480px.
 		Gutters: 24px.
 		Outer margins: 22px.
 		Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
-@media only screen and  (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+@media only screen and  (min-width: $screen-xs-min) and (max-width: $grid-float-breakpoint-max) {
 
 }
