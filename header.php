@@ -16,8 +16,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
-    <![endif]-->  
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" />	        
+    <![endif]-->      
 	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/template.css" />       
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
@@ -33,7 +32,13 @@
             <div class="col-md-4 col-xs-8">
 			<h1>
                 <a href="<?php bloginfo('wpurl'); ?>" title="<?php bloginfo('description'); ?>">
-                    <img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo("template_url"); ?>/img/logo.png" class="img-responsive" />
+					<?php
+					$logo = get_theme_mod( 'baset_logo' );
+					if($logo == "") {
+						$logo =  get_bloginfo("template_url").'/img/logo.png';
+					}
+					?>
+                    <img alt="<?php bloginfo('name'); ?>" src="<?php echo $logo; ?>" class="img-responsive" />
                     <span><?php bloginfo('name'); ?></span>
                 </a>
             </h1>            
