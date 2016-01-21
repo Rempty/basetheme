@@ -86,7 +86,7 @@ function vimeo($atts) {
     return '
     <div class="embed-container"><iframe width="'.$width.'" height="'.$height.'" src="http://player.vimeo.com/video/'.$id.'?rel=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
 }
-add_shortcode('vimeo', 'viemo');
+add_shortcode('vimeo', 'vimeo');
 
 // Literal
 function literal_shortcode( $atts, $content = NULL ) {	 

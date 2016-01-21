@@ -331,7 +331,7 @@ class AT_Meta_Box {
     foreach ( $this->_fields as $field ) {
       $field['multiple'] = isset($field['multiple']) ? $field['multiple'] : false;
       $meta = get_post_meta( $post->ID, $field['id'], !$field['multiple'] );
-      $meta = ( $meta !== '' ) ? $meta : @$field['std'];
+      $meta = ( !empty($meta) ) ? $meta : @$field['std'];
 
       if (!in_array($field['type'], array('image', 'repeater','file')))
         $meta = is_array( $meta ) ? array_map( 'esc_attr', $meta ) : esc_attr( $meta );
