@@ -2,15 +2,11 @@
  /* Template Name: Homepage */
 ?>
 <?php get_header(); ?>
-<?php
-$banner = get_post_meta($post->ID, 'theme_page_banner', true);
-if($banner!="") {
-    echo '
-    <div id="bannerPage">
-        <img src="'.$banner.'"  />
-    </div>';
-}
-?>
+
+<section class="home__slider">    
+    
+</section><!--home__slider-->
+
 <section id="content" class="clearfix">
     <div class="container">
     <section id="main" class="fullwidth">

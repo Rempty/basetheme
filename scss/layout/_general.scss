@@ -8,5 +8,12 @@ body {
   color:$textcolor;
   background-color:$background;
 }
+body, html {
+    height: 100%;
+}
 a { color:$linkcolor; }
-a:hover { color:$linkcolorhover; }
+a:hover { color:$linkcolorhover; text-decoration: none; }
+
+#page-wrap {
+    height: 100%; 
+}

@@ -37,11 +37,13 @@ if (is_admin()){
   
   /// Agregar repetidor
   $repeater_fields[] = $slider_meta->addText($prefix.'re_text_titulo',array('name'=> 'Titulo ', 'class'=>'at_slide_text'),true);
+  $repeater_fields[] = $slider_meta->addText($prefix.'re_text_subtitulo',array('name'=> 'Subtitulo ', 'class'=>'at_slide_text'),true);
   $repeater_fields[] = $slider_meta->addText($prefix.'re_text_link',array('name'=> 'Link ', 'class'=>'at_slide_text'),true);
+  $repeater_fields[] = $slider_meta->addText($prefix.'re_text_button',array('name'=> 'Botón ', 'class'=>'at_slide_text'),true);
   $repeater_fields[] = $slider_meta->addImage($prefix.'image_imagen',array('name'=> 'Imagen '),true);
   
   $slider_meta->addRepeaterBlock($prefix.'re_',array(
-    'inline'   => true, 
+    'inline'   => false, 
     'name'     => 'Slides',
     'fields'   => $repeater_fields, 
     'sortable' => true

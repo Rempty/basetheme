@@ -10,7 +10,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -18,7 +18,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
     <![endif]-->      
 	<link rel="stylesheet" media="screen" href="<?php bloginfo('template_directory'); ?>/css/template.css" />       
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
     
 	<?php wp_head(); ?>
 </head>
@@ -29,7 +29,7 @@
 <header id="header" class="clearfix">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-xs-8">
+            <div class="col-md-3 col-xs-8">
 			<h1>
                 <a href="<?php bloginfo('wpurl'); ?>" title="<?php bloginfo('description'); ?>">
 					<?php
@@ -44,7 +44,7 @@
             </h1>            
             </div>
             
-            <div class="col-md-8  col-xs-4">
+            <div class="col-md-9  col-xs-4">
             <nav id="topmenu">
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'topmenu', 'menu_id' => 'menu-topmenu', 'container' => '' ) ); ?>
             </nav>
